@@ -1,10 +1,17 @@
 import './App.css'
 import Welcome from './components/welcome';
+import BomDia from './components/BomDia';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return <></>;
+  return (
+  <>
+    <Welcome />
+    <BomDia />
+  </>
+  );
 }
 
 export default App;
