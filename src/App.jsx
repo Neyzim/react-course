@@ -6,6 +6,8 @@ import Description from './components/Description';
 import Dog from './components/Dog';
 import Counter from './components/Counter';
 import UserInfoForm from './components/UserInfoForm';
+import Button from './components/Button';
+import FatherFunction from './components/FatherFunction';
 
 
 
@@ -20,6 +22,8 @@ function App() {
     <Dog nome="Thor" raca="Vira lata" />
     <Counter />
     <UserInfoForm />
+    <Button />
+    <FatherFunction />
   </>
   );
 }
