@@ -8,6 +8,7 @@ import Counter from './components/Counter';
 import UserInfoForm from './components/UserInfoForm';
 import Button from './components/Button';
 import FatherFunction from './components/FatherFunction';
+import FormEvent from './components/FormEvent';
 
 
 
@@ -24,6 +25,7 @@ function App() {
     <UserInfoForm />
     <Button />
     <FatherFunction />
+    <FormEvent />
   </>
   );
 }
