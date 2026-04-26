@@ -11,6 +11,7 @@ import FatherFunction from './components/FatherFunction';
 import FormEvent from './components/FormEvent';
 import COndicionalRender from './components/COndicionalRender';
 import LoginButton from './components/LoginButton';
+import Warning from './components/Warning';
 
 
 
@@ -41,6 +42,8 @@ function App() {
     {/*Renderiação condicional & expressão ternária*/}
     <COndicionalRender user="Carlos" />
     <LoginButton loggedIn={true}/>
+    {/*Render nulo */}
+    <Warning warning={null}/>;
   
   </>
   );
