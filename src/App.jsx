@@ -13,6 +13,8 @@ import COndicionalRender from './components/COndicionalRender';
 import LoginButton from './components/LoginButton';
 import Warning from './components/Warning';
 import NumberList from './components/NumberList';
+import StilizedButton from './components/StilizedButton';
+import BlueButton from './components/BlueButton';
 
 
 
@@ -47,6 +49,10 @@ function App() {
     <Warning warning={null}/>;
     {/*Listas chaves */}
     <NumberList numbers={[1,2,3,4,5]} />
+    {/*Estilização por atributo */}
+    <StilizedButton />
+    {/*Estilos globais*/}
+    <BlueButton />
     
   
   </>
