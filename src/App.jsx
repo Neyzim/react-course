@@ -12,6 +12,7 @@ import FormEvent from './components/FormEvent';
 import COndicionalRender from './components/COndicionalRender';
 import LoginButton from './components/LoginButton';
 import Warning from './components/Warning';
+import NumberList from './components/NumberList';
 
 
 
@@ -44,6 +45,9 @@ function App() {
     <LoginButton loggedIn={true}/>
     {/*Render nulo */}
     <Warning warning={null}/>;
+    {/*Listas chaves */}
+    <NumberList numbers={[1,2,3,4,5]} />
+    
   
   </>
   );
