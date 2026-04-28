@@ -15,10 +15,18 @@ import Warning from './components/Warning';
 import NumberList from './components/NumberList';
 import StilizedButton from './components/StilizedButton';
 import BlueButton from './components/BlueButton';
+import Greetins from './components/exercices/Greetins';
+import CounterEx from './components/exercices/CounterEx';
+import TaskList from './components/exercices/TaskList';
 
 
 
 function App() {
+
+  const tasks = [
+        { id: 1, text: "Comprar leite" },
+        { id: 2, text: "Estudar React" },
+    ];
   
   return (
   <>
@@ -53,8 +61,11 @@ function App() {
     <StilizedButton />
     {/*Estilos globais*/}
     <BlueButton />
-    
-  
+
+    {/*Exercicios */}
+    <Greetins name="Ney" />
+    <CounterEx />
+    <TaskList  tasks={tasks} />
   </>
   );
 }
