@@ -25,6 +25,7 @@ import ContextValueCheck from './components/ContextValueCheck';
 import COntextChildComponent from './components/COntextChildComponent';
 import UseReducerCounter from './components/UseReducerCounter';
 import DisplayWindowSize from './components/DisplayWindowSize';
+import Container from './components/Container';
 
 
 
@@ -75,6 +76,7 @@ function App() {
     <CounterEx />
     <TaskList  tasks={tasks} />
 
+  <h1>Parte 2</h1>
     {/* Parte 2 */}
     {/*Use Effect */}
     <UseEffectEx />
@@ -89,6 +91,11 @@ function App() {
     <UseReducerCounter />
     {/*Custom Hooks */}
     <DisplayWindowSize />
+    {/*Slots e Children props */}
+    <Container>
+      <h1>Titulo da sessão</h1>
+      <p>Subtitulo</p>
+    </Container>
     
   </>
   );
