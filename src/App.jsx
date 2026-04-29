@@ -20,6 +20,9 @@ import CounterEx from './components/exercices/CounterEx';
 import TaskList from './components/exercices/TaskList';
 import UseEffectEx from './components/UseEffectEx';
 import Timer from './components/Timer';
+import { MyContext, MyContextProvider } from './contexts/MyContext';
+import ContextValueCheck from './components/ContextValueCheck';
+import COntextChildComponent from './components/COntextChildComponent';
 
 
 
@@ -71,8 +74,16 @@ function App() {
     <TaskList  tasks={tasks} />
 
     {/* Parte 2 */}
+    {/*Use Effect */}
     <UseEffectEx />
+    {/*Use Context */}
     <Timer />
+    {/*Context */}
+    <MyContextProvider> 
+      <COntextChildComponent /> {/*coloco os componentes que vão ter acesso ao contexto dentro do provider */}
+      <ContextValueCheck />
+      
+    </MyContextProvider>
   </>
   );
 }
