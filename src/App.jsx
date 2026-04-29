@@ -24,6 +24,7 @@ import { MyContext, MyContextProvider } from './contexts/MyContext';
 import ContextValueCheck from './components/ContextValueCheck';
 import COntextChildComponent from './components/COntextChildComponent';
 import UseReducerCounter from './components/UseReducerCounter';
+import DisplayWindowSize from './components/DisplayWindowSize';
 
 
 
@@ -86,6 +87,8 @@ function App() {
     </MyContextProvider>
     {/*Use Reducer */}
     <UseReducerCounter />
+    {/*Custom Hooks */}
+    <DisplayWindowSize />
     
   </>
   );
