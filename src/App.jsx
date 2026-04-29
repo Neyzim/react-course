@@ -23,6 +23,7 @@ import Timer from './components/Timer';
 import { MyContext, MyContextProvider } from './contexts/MyContext';
 import ContextValueCheck from './components/ContextValueCheck';
 import COntextChildComponent from './components/COntextChildComponent';
+import UseReducerCounter from './components/UseReducerCounter';
 
 
 
@@ -76,14 +77,16 @@ function App() {
     {/* Parte 2 */}
     {/*Use Effect */}
     <UseEffectEx />
-    {/*Use Context */}
     <Timer />
     {/*Context */}
     <MyContextProvider> 
       <COntextChildComponent /> {/*coloco os componentes que vão ter acesso ao contexto dentro do provider */}
+      {/*Use Context */}
       <ContextValueCheck />
-      
     </MyContextProvider>
+    {/*Use Reducer */}
+    <UseReducerCounter />
+    
   </>
   );
 }
