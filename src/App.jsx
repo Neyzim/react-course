@@ -26,6 +26,7 @@ import COntextChildComponent from './components/COntextChildComponent';
 import UseReducerCounter from './components/UseReducerCounter';
 import DisplayWindowSize from './components/DisplayWindowSize';
 import Container from './components/Container';
+import UserProfile from './components/UserProfile';
 
 
 
@@ -96,6 +97,8 @@ function App() {
       <h1>Titulo da sessão</h1>
       <p>Subtitulo</p>
     </Container>
+    {/*Sincronizar estados com props */}
+    <UserProfile userId={2}/>
     
   </>
   );
