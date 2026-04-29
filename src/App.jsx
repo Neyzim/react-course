@@ -27,6 +27,8 @@ import UseReducerCounter from './components/UseReducerCounter';
 import DisplayWindowSize from './components/DisplayWindowSize';
 import Container from './components/Container';
 import UserProfile from './components/UserProfile';
+import HeavyCalc from './components/HeavyCalc';
+import CallbackCounter from './components/CallbackCounter';
 
 
 
@@ -99,6 +101,9 @@ function App() {
     </Container>
     {/*Sincronizar estados com props */}
     <UserProfile userId={2}/>
+    {/*useMemo e useCallback */}
+    <HeavyCalc numero={5}/>
+    <CallbackCounter />
     
   </>
   );
