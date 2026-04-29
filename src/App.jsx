@@ -18,6 +18,9 @@ import BlueButton from './components/BlueButton';
 import Greetins from './components/exercices/Greetins';
 import CounterEx from './components/exercices/CounterEx';
 import TaskList from './components/exercices/TaskList';
+import UseEffectEx from './components/UseEffectEx';
+import Timer from './components/Timer';
+
 
 
 
@@ -66,6 +69,10 @@ function App() {
     <Greetins name="Ney" />
     <CounterEx />
     <TaskList  tasks={tasks} />
+
+    {/* Parte 2 */}
+    <UseEffectEx />
+    <Timer />
   </>
   );
 }
